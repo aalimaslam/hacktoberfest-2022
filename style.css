@@ -1,0 +1,16 @@
+.bar{
+    margin-left:5px;
+    width:10px;
+    background-color:white;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+
+}
+.container-fluid{
+    height:100vh;
+}
+.range-container{
+    font-size:1.2rem;
+}
