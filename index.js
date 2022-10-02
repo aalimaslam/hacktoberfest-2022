@@ -91,53 +91,6 @@ async function selectionSort(){
     }
 }
 
-// async function mergeSort(){
-//     const ele = $$(".bar");
-//     let arr = [];
-//     for(let i=0; i< ele.length; i++){
-//         arr.push(parseInt(ele[i].style.height));
-//         await waitForMe(speed.value)
-//     }
-//     arr = mergeSortHelper(arr);
-//     for(let i=0; i< ele.length; i++){
-//         ele[i].style.height = `${arr[i] * 1}px`;
-//     }
-// }
-
-// function mergeSortHelper(arr){
-//     if(arr.length === 1){
-//         return arr;
-//     }
-//     let mid = Math.floor(arr.length/2);
-//     let left = mergeSortHelper(arr.slice(0,mid));
-//     let right = mergeSortHelper(arr.slice(mid));
-//     return mergeSortHelper(left, right);
-// }
-
-// function mergeSortHelper(arr){
-//     if(arr.length === 1){
-//         return arr;
-//     }
-//     let mid = Math.floor(arr.length/2);
-//     let left = mergeSortHelper(arr.slice(0,mid));
-//     let right = mergeSortHelper(arr.slice(mid));
-//     return mergeSortHelper(left, right);
-// }
-// function mergeSort(){
-//     const ele = $$(".bar");
-//     let arr = [];
-//     for(let i=0; i< ele.length; i++){
-//         arr.push(parseInt(ele[i].style.height));
-//     }
-//     arr = mergeSortHelper(arr);
-//     for(let i=0; i< ele.length; i++){
-//         ele[i].style.height = `${arr[i] * 2}px`;
-//     }
-
-// }
-
-
-
 async function quickSort(){
     const ele = $$(".bar");
     let arr = [];
@@ -216,46 +169,3 @@ const speedText = $("#speedText");
 speed.addEventListener("change",()=>{
     addValueToRange(speedText,speed);
 })
-
-
-
-// async function insertionSort(){
-//     //Start from the second element.
-//     const ele = $$(".bar");
-//     for(let i = 1; i < ele.length;i++){
-
-//         //Go through the elements behind it.
-//         for(let j = i - 1; j > -1; j--){
-//             ele[j].style.background = 'red';
-//             ele[i].style.background = 'red';
-//             await waitForMe(10)
-//             //value comparison using ascending order.
-//             if(ele[j + 1].style.height < ele[j].style.height){
-
-//                 //swap
-//                 [ele[j+1].style.height,ele[j].style.height] = [ele[j].style.height,ele[j + 1].style.height];
-
-//             }
-//         }
-//         ele[i].style.background = 'green';
-
-//     };
-// }
-
-// async function insertionSort(){
-//     const ele = $$(".bar");
-//     for(let i = 1; i < ele.length; i++){
-//         let temp = ele[i].style.height;
-//         let j = i - 1;
-//         while(j >= 0 && ele[j].style.height > temp){
-//             await waitForMe(50);
-//             ele[j].style.background = 'red';
-//             ele[i].style.background = 'red';
-//             ele[j + 1].style.height = ele[j].style.height;
-//             j--;
-//         }
-//         ele[j + 1].style.height = temp;
-//         ele[i].style.background = 'green';
-
-//     }
-// }
